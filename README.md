@@ -1,6 +1,10 @@
 # Radio App
 
+**Author:** [Michael5cents](https://github.com/michael5cents)
+
 A Java-based internet radio player with ICY metadata support for streaming radio stations. This application allows you to listen to your favorite online radio stations while displaying real-time metadata like song titles and artist information.
+
+[View Author Details](AUTHORS)
 
 ## Features
 
