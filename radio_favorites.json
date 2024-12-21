@@ -1,20 +1,2 @@
-{
-  "stations": [
-    {
-      "name": "BBC Radio 1",
-      "url": "http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one"
-    },
-    {
-      "name": "NPR",
-      "url": "https://npr-ice.streamguys1.com/live.mp3"
-    },
-    {
-      "name": "Classic FM",
-      "url": "http://media-ice.musicradio.com/ClassicFMMP3"
-    },
-    {
-      "name": "Jazz24",
-      "url": "https://live.wostreaming.net/direct/ppm-jazz24aac-ibc1"
-    }
-  ]
-}
+- 0 N - Jazz on Radio|https://0n-jazz.radionetz.de/0n-jazz.mp3|jazz,smooth jazz,swing
+Popz Place Radio|http://s8.myradiostream.com/15672/listen.mp3|Pop

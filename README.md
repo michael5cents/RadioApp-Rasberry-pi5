@@ -1,26 +1,23 @@
 # Radio App
 
-**Author:** [Michael5cents](https://github.com/michael5cents)
-
-A Java-based internet radio player with ICY metadata support for streaming radio stations. This application allows you to listen to your favorite online radio stations while displaying real-time metadata like song titles and artist information.
-
-[View Author Details](AUTHORS)
+A JavaFX-based Internet Radio Player that allows you to search, play, and save your favorite radio stations.
 
 ## Features
 
-- 🎵 Stream online radio stations
-- 📝 Display real-time ICY metadata (song titles, artist information)
-- ⭐ Save and manage favorite radio stations
-- 🎨 Simple and intuitive interface
-- 🔄 Automatic metadata updates
-- 💾 Persistent favorites storage
+- Search for radio stations by genre
+- Play internet radio streams
+- Save favorite stations for quick access
+- Display current playing track information (for supported stations)
+- Volume control
+- Simple and intuitive interface
 
-## Prerequisites
+## Requirements
 
-- Java 11 or higher
-- Maven 3.6 or higher
+- Java 17 or higher
+- VLC Media Player installed on your system
+- Maven for building the project
 
-## Installation
+## Building and Running
 
 1. Clone the repository:
 ```bash
@@ -28,79 +25,43 @@ git clone https://github.com/michael5cents/RadioApp.git
 cd RadioApp
 ```
 
-2. Build the project using Maven:
+2. Build with Maven:
 ```bash
 mvn clean package
 ```
 
 3. Run the application:
 ```bash
-java -jar target/radio-app-1.0-SNAPSHOT.jar
+mvn exec:java
 ```
 
 ## Usage
 
-1. **Adding a Radio Station**
-   - Enter the stream URL in the input field
-   - Click "Add Station" to save it to favorites
+1. **Search for Stations**
+   - Enter a genre (e.g., rock, jazz, classical)
+   - Click "Search Radio Stations"
+   - Results will appear in the search results list
 
-2. **Playing a Station**
-   - Select a station from your favorites
-   - Click "Play" to start streaming
-   - The current song information will display automatically
+2. **Play a Station**
+   - Click on any station in either the search results or favorites list
+   - Use the Play/Pause button to control playback
+   - Adjust volume using the slider
 
-3. **Managing Favorites**
-   - Your favorite stations are automatically saved
-   - Remove stations using the "Remove" button
-   - Favorites are stored in `radio_favorites.json`
+3. **Save Favorites**
+   - Select a station from the search results
+   - Click "Save Selected to Favorites"
+   - The station will appear in your favorites list
+   - Favorites are automatically loaded next time you start the app
 
-## Technical Details
+## Recent Updates
 
-### Components
-
-- **App.java**: Main application class handling the UI and playback
-- **IcyMetadataReader.java**: Handles ICY metadata parsing from radio streams
-
-### Architecture
-
-The application uses a simple but effective architecture:
-
-- JavaFX for the user interface
-- Custom ICY metadata parser for stream information
-- JSON-based persistence for favorites
-- Thread-safe audio playback handling
-
-### Configuration
-
-Radio station favorites are stored in `radio_favorites.json` in the following format:
-
-```json
-{
-  "stations": [
-    {
-      "name": "Station Name",
-      "url": "http://stream.url"
-    }
-  ]
-}
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Added separate lists for search results and favorites
+- Implemented station search using radio-browser.info API
+- Added "Save to Favorites" functionality
+- Fixed duplicate entries in search results
+- Improved error handling and user feedback
+- Added graceful shutdown with quit button
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Thanks to all the open-source radio stations
-- JavaFX community for the UI framework
-- Contributors and users of the application
+This project is licensed under the MIT License - see the LICENSE file for details.

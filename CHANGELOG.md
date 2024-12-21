@@ -1,38 +1,33 @@
 # Changelog
 
-All notable changes to the Radio App project will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [1.0.0] - 2024-01-14
+## [1.1.0] - 2024-12-21
 
 ### Added
-- Initial release of Radio App
-- Basic radio stream playback functionality
-- ICY metadata support for displaying current song information
-- Favorites management system
-- JSON-based persistence for favorite stations
-- JavaFX-based user interface
-- Example radio stations included
+- Separate lists for search results and favorites
+- Direct integration with radio-browser.info API
+- "Save Selected to Favorites" button
+- Persistent storage of favorite stations
+- Loading indicator for station searches
+- Quit button for graceful shutdown
 
-### Technical Features
-- Custom ICY metadata parser
-- Thread-safe audio playback
-- Maven project structure
-- Basic unit tests
-- Error handling for stream connections
+### Changed
+- Improved station search to prevent duplicate entries
+- Enhanced error handling and user feedback
+- Updated UI layout for better organization
+- Simplified station addition process
 
-## [Unreleased]
+### Fixed
+- Duplicate entries appearing in search results
+- UI freezing during station searches
+- Error handling for station playback
 
-### Planned
-- See [ROADMAP.md](ROADMAP.md) for planned features and improvements
+## [1.0.0] - Initial Release
 
-## Version History
-
-### [1.0.0] - 2024-01-14
-- First stable release
-- Core functionality implemented
-- Basic documentation added
-- MIT License applied
-- Example stations included
+### Added
+- Basic radio player functionality
+- VLC media integration
+- Volume control
+- Play/Pause controls
+- Station metadata display
