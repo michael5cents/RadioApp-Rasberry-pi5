@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Radio App
+Comment=Internet Radio Player
+Exec=java -jar /opt/radioplayer/radio-app.jar
+Icon=/opt/radioplayer/icon.png
+Terminal=false
+Categories=Audio;Player;

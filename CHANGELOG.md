@@ -1,33 +1,27 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-
-## [1.1.0] - 2024-12-21
+## [1.1.0] - 2023-12-21
 
 ### Added
-- Separate lists for search results and favorites
-- Direct integration with radio-browser.info API
-- "Save Selected to Favorites" button
-- Persistent storage of favorite stations
-- Loading indicator for station searches
-- Quit button for graceful shutdown
+- Full Raspberry Pi 5 support with native desktop integration
+- Proper ARM64 JavaFX configuration
+- System-wide installation script
+- Application icon and desktop entry
+- Logging support for troubleshooting
 
 ### Changed
-- Improved station search to prevent duplicate entries
-- Enhanced error handling and user feedback
-- Updated UI layout for better organization
-- Simplified station addition process
+- Updated Java version to 17
+- Improved dependency management
+- Enhanced desktop integration with GTK platform support
+- GPU acceleration enabled for better performance
 
 ### Fixed
-- Duplicate entries appearing in search results
-- UI freezing during station searches
-- Error handling for station playback
+- JavaFX runtime components loading on ARM64
+- Desktop integration issues
+- Icon display in applications menu
 
 ## [1.0.0] - Initial Release
 
-### Added
-- Basic radio player functionality
-- VLC media integration
+- Basic radio streaming functionality
+- Station management
 - Volume control
-- Play/Pause controls
-- Station metadata display

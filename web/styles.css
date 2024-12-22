@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#station-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#station-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+#station-list li:hover {
+    background-color: #ddd;
+}
+
+#radio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#play-pause {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#now-playing {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
